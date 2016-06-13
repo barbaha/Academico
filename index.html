@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Site inicial do Sistema escolar IFPE-JG, criado pelos alunos: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius sob instrução do professor Francisco Junior para a disciplina de Projeto e Prática.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IFPE-JG</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/w3Data.js"></script><!-- nunca, em hipotese alguma remova esse código. Obrigado. --> <!-- O w3Data é a biblioteca do w3 que é nada mais que um arquivo js com funções prontas para uso, no nosso caso, usamos a função include html para chamar o menu -->
+    </head>
+    <body>
+    	<div w3-include-html="menuSite.html"></div> <!--esta div é para chamar o menu usando o include html do w3 que chama o arquivo menuSite.html e o inclui dentro dessa div -->
+    	
+ 		<section class="banner"> <!-- a tag section serve para dividir o código em seções, no nesse caso, essa é a seção do banner. -->
+      		<span class="pagina"></span> <!-- neste span é onde iremos adicionar o indice (bolinhas) do banner que chamamos as imagens e apontam qual é a imagem atual -->
+      		<div class="slider">
+        		<div class="slider-item">
+          			<img src="img/banner1.jpg" alt=""/>
+        		</div>
+        		<div class="slider-item">
+          			<img src="img/banner2.jpg" alt=""/>
+        		</div>
+        		<div class="slider-item">
+          			<img src="img/banner3.jpg" alt=""/>
+        		</div>
+        		<div class="slider-item">
+          			<img src="img/banner4.jpg" alt=""/>
+        		</div>
+        		<!-- as imagens ainda serão editadas e talvez possamos colocar outras melhores -->
+      		</div> <!-- div do slide e as imagens que iram ser aplicadas ao banner -->
+    	</section>
+
+			<section class="oportunidades movit">
+				<div class="container">
+					<h1>Oportunidades</h1>
+					<div class="vaga">
+						<h1>Estágio em Webdesign – Recife</h1>
+						<hr>
+						<p>
+							A Cartello - Tecnologia | Internet | Mobile, em Recife, precisa de Estágiario em Webdesign. Interessados devem enviar o currículo e portfólio através do formulário (Trabalhe Conosco) na página contato no site:  www.cartello.com.br <br>
+							- <br>
+							Requisitos: <br>
+							- Dinâmicos, pró-ativos e que buscam grandes desafios na área de web; <br>
+							- Conhecimento nas ferramentas do pacote Adobe; <br>
+							- Já ter trabalhado com web. <br>
+							- Experiência com conceito de usabilidade. <br>
+							Obs.: É necessário o envio de portfólio <br>
+
+							Mais informações <a href="http://www.gogojob.com.br/2016/06/09/estagio-em-webdesign-recife-64/">aqui</a>
+						</p>
+					</div>
+					<div class="vaga">
+						<h1>Estágio em Qualidade (SQM)</h1>
+						<hr>
+						<p>
+							Luxottica – multinacional italiana de grande porte, líder mundial no segmento de design, produção e distribuição de moda e óculos. está com 1 vaga(s) em aberto para campinas. <br>
+
+							Responsabilidades: SQM – sistema de gestão da qualidade:<br>
+							# Controle de recebimento (inspeção de qualidade) e medição de amostras;<br>
+							# Gestão dos equipamentos de medição e interface com o fornecedor do serviço de calibração; <br>
+							# Apoio ao Inspetor no suporte à fábrica para resolução de problemas em peças compradas/insumos comprados; <br>
+							# Montar relatórios e report´s. <br>
+
+							Mais informações <a href="http://empregacampinas.com.br/2016/06/estagio-em-qualidade-sqm-campinas-1-vagas/">aqui</a>
+
+						</p>
+						
+					</div>
+				</div>
+			</section>
+
+			<section class="footer movit">
+				<div class="container">
+					<div class="contato">
+						<p>Email:</p>
+						<p>campus@ifpe.jaboatao.edu.br</p>
+					</div>
+				</div>
+			</section>
+
+    	</section>
+        <script>
+			w3IncludeHTML();
+		</script> <!-- este script é onde chamamos a função do w3Data, mais explicações sobre isso no link que Francisco colocou na atividade. -->
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    	<script type="text/javascript" src="js/jquery.cycle.all.js"></script><!-- No banner usamos o plugin Cycle que é bem simples e prático. Pra utilizar ele precisamos linkar o arquivo no código, precisamente dessa forma, colocando o arquivo jquery primeiro, depois o arquivo cycle, seguido do arquivo ou código onde chamamos a função e determinamos o que queremos para nosso banner. -->
+    	<script type="text/javascript" src="js/main.js"></script> <!-- arquivo onde vamos colocar TODOS os códigos js que seram usados no nosso site -->
+    </body>
+</html>

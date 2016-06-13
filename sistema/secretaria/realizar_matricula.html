@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página para a secretaria realizar matricula no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado  pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Gestão Acadêmica - ACAD</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="../img/ifpe_logomarca.png" alt="logo IFPE">
+        </div><!-- logo do sistema -->
+        
+        <div class="container">
+            <div class="conteudo">
+                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
+                <h2><a href="menu_secretaria.html">Secretaria</a> :: Realizar matrícula</h2>
+
+                    <div class="cadastro">
+                        <form action="form-to-cadastro.php" method="post">
+                            <div class="aluno">
+                                <label for="aluno" class="alun">Aluno:</label>
+                                 <select>
+                                    <option value="0">Selecione um aluno</option>
+                                    <option value="Barbaha">Barbaha</option>
+                                    <option value="Thayane">Thayane</option>
+                                    <option value="Rennan">Rennan</option>
+                                    <option value="Vicente">Vicente</option>
+                                </select> 
+                            </div>
+                            <div class="curso">
+                                <label for="curso" class="curs">Curso:</label>
+                                <select>
+                                    <option value="0">Selecione um curso</option>
+                                    <option value="IPI">Informática para Internet</option>
+                                    <option value="qualidade">Qualidade</option>
+                                    <option value="quimica">Quimica</option>
+                                    <option value="SI">Sistema da Informação</option>
+                                </select> 
+                            </div>
+                            <div class="turno">
+                                <label for="turno" class="turn">Turno:</label>
+                                <label for="tarde">Tarde</label>
+                                <input type="radio" id="tarde" value="tarde">
+                                <label for="noite">Noite</label>
+                                <input type="radio" id="noite" value="noite">
+                            </div>
+
+                            <div class="semestre">
+                                <label for="semestre" class="semes">Semestre:</label>
+                                <input type="text" id="semestre" maxlength="8">
+                            </div>
+
+                            <div class="disciplinas">
+                                <label for="disciplinas" class="disc">Disciplinas:</label><br>
+                                <input type="checkbox" id="poo" value="poo">
+                                <label for="poo">POO</label><br>
+                                <input type="checkbox" id="web1" value="web1">
+                                <label for="web1">Web 1</label><br>
+                                <input type="checkbox" id="prpr" value="prpr">
+                                <label for="prpr">PRPR</label><br>
+                                <input type="checkbox" id="bd" value="bd">
+                                <label for="bd">Banco de dados</label>
+                            </div>
+                            <button type="submit" name="Enviar" value="Enviar" id="botao">Efetuar Matrícula</button>
+                        </form>
+                    </div>
+
+                <a href="../index.html" class="menu-principal">Menu principal</a>
+            </div>
+        </div>
+
+        
+        
+    </body>
+</html>

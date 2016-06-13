@@ -1,0 +1,436 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #fff;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+section.content{
+	height: 100vh;
+}
+
+.container{
+	width: 80%;
+	margin-left: 10%;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style:none;
+}
+
+/*********** CSS DO SITE *************/
+
+			/*   MENU   */
+section.fixed{
+	width: 100%;
+	height: 125px;
+	background-color: #fff; 
+	top: 0;
+	position: fixed;
+	z-index: 999;
+}
+
+nav.menu{
+	text-decoration: none;
+	overflow: hidden;
+	margin-top:15px;
+
+}
+
+nav.menu > picture > a > img{
+	width: 200px;
+	height:90px;
+	/* margin: 50px 25% 20px 0; */
+	margin-right: 15%;
+} 
+
+nav.menu > .navegacao{
+	float: right;
+	width: 65%;
+	margin-top: 50px;
+}
+
+nav.menu > .navegacao > ul > li > a{
+ 	width: 14%;
+	padding: 7px 1%;
+	border: solid 2px transparent;
+	border-radius: 5px;
+	float: left;
+	text-align: center;
+	margin-right: 7px;
+}
+
+nav.menu > .navegacao > ul > li > a:hover{
+	border: solid 2px green;
+}
+
+li ul li.ipi{
+	border-bottom:2px solid green;
+}
+
+li ul{
+	display:none;
+	text-decoration: none;
+	border: 2px solid green;
+	border-radius: 3px;
+	text-align: center;
+	top: 120px;
+	position: absolute;
+	margin-left: 87px;
+	line-height: 35px;
+	padding: 5px;
+	background-color: #fff;
+}
+
+li:hover ul, li.over ul{
+	display: block;
+	padding: 5px;
+}
+
+nav.menu > .navegacao > .busca > input{
+	float: right;
+	width: 25%;
+	height: 34px;
+	border: solid 2px green;
+	border-radius: 5px;
+	background-color: #eeefff;
+}
+
+nav.menu > .navegacao > .busca > input:active,
+nav.menu > .navegacao > .busca > input:hover,
+nav.menu > .navegacao > .busca > input:focus{
+	background-color: #fff;
+	border: solid 2px green;
+}
+
+			/*   BANNER   */
+.banner {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+/* 	top: 130px; */
+}
+
+.slider {
+	width: 100%;
+	height: 100vh;
+	margin: auto;
+}
+
+.slider-item {
+	width: 100% !important;
+	position: relative;
+}
+
+.slider-item img {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.pagina {
+	position: absolute;
+	z-index: 999;
+	bottom: 20px;
+	width: 50%;
+	left: 25%;
+	text-align: center;
+}
+
+.pagina a {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background: #fff;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.pagina a.slideativo {
+	background: green;
+}
+
+.pagina a:hover {
+	background: #32CD32;
+}
+
+			/*  NOTICIAS  */
+section.noticias{
+	width: 100%;
+	height: 100vh;
+	background-color: #F0F8FF;
+}
+
+section.noticias > .container > h1{
+	padding-top: 160px;
+	font-size: 25px;
+	font-family: roboto;
+	color: #006400;
+}
+
+section.noticias > .container > .publicacao{
+	width: 49%;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+	height: 400px;
+
+}
+
+section.noticias > .container > .right{
+	border-right: solid 2px #8FBC8F;
+}
+
+section.noticias > .container > .publicacao h1{
+	font-size: 22px;
+	color: green;
+	margin-bottom: 20px;
+	text-transform: light;
+	font-weight: 400;
+}
+
+section.noticias > .container > .publicacao p{
+	margin: 0 5%;
+	text-align: left;
+}
+
+			/* OPORTUNIDADES */
+section.oportunidades{
+	width: 100%;
+	height: 100vh;
+	background-color: #F0FFF0;
+}
+
+section.oportunidades > .container > h1{
+	padding-top: 160px;
+	font-size: 25px;
+	font-family: roboto;
+	color: #006400;
+}
+
+section.oportunidades > .container > .vaga{
+	width: 45%;
+	float: left;
+	margin-top: 50px;
+	text-align: center;
+	height: 400px;
+	background-color: #3CB371;
+	margin-left: 5%;
+	margin: 50px 2.5%;
+	border-radius: 10px;
+}
+
+section.oportunidades > .container > .vaga h1{
+	font-size: 22px;
+	color: #fff;
+	margin: 20px 0;
+	font-weight: 900;
+}
+
+section.oportunidades hr{
+	border: solid 0.5px #2E8B57;
+	height: 2px;
+}
+
+section.oportunidades > .container > .vaga p{
+	margin: 20px 5%;
+	text-align: left;
+	color: #fff;
+}
+
+			/*    FOOTER    */
+section.footer{
+	background-color: #006400;
+	height: 150px;
+}
+
+section.footer > .container > .contato{
+	float: right;
+	margin-top: 50px;
+	width: 250px;
+}
+
+section.footer > .container > .contato p{
+	color: #fff;
+}
+
+
+
+
+/********** CSS DO SISTEMA **********/
+
+.logo{
+	margin: 30px 40%;
+}
+
+.logo > img{
+	width: 250px;
+	height: 100px;
+}
+
+.container > .conteudo{
+	width: 100%;
+	height: 470px;
+	background-color: #B4EEB4;
+	border-radius: 10px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.container > .conteudo > h1{
+	margin-bottom: 20px;
+}
+
+.container > .conteudo > h2{
+	margin-bottom: 20px;
+}
+
+.container > .conteudo > h3{
+	margin-bottom: 20px;
+}
+
+h2 > a{
+	color: green;
+}
+
+a{
+	color: #000;
+}
+
+a:hover{
+	color: green;
+}
+
+a:active{
+	color: #aaa;
+}
+
+.menu-principal{
+	float: right;
+	margin-top: 2%;
+	margin-right: 5%;
+	color: green;
+}
+
+.container > .conteudo > .cadastro{
+}
+
+select{
+	width: 170px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	border: 2px;
+	margin-bottom: 20px;
+}
+
+.disc, .unid, .nota, .dat, .falt, 
+.prof, .titl, .descr, .nom, .cepef,
+.matr, .alun, .semes, .emiss, .curs, 
+.turn{
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
+.disciplinas{
+	margin-left: 41%;
+	width: 200px;
+	height: 110px;
+	text-align: center;
+}
+
+.unidade{
+	height: 70px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+   padding-left:5px;
+   padding-right:5px;
+   border-radius:15px;
+   -webkit-appearance:button;
+   border: double 2px #ccc;
+   background-color:#fff;
+   color:#FFF;
+   white-space: nowrap;
+   overflow:hidden;
+   outline: none !important;
+   width:15px;
+   height:15px;
+   cursor: pointer;
+}
+ 
+input[type=radio]:checked,
+input[type=checkbox]:checked {
+   background-color:green;
+}
+ 
+input[type=radio]:hover,
+input[type=checkbox]:checked {
+   box-shadow:0px 0px 10px green;
+}
+
+.nota > input, .data > input, .faltas > input,
+.titulo > input, .nome > input, .cpf > input,
+.matricula > input, .semestre > input, 
+.idprofessor > input{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	border: 2px;
+}
+
+.nome > input, .cpf > input,
+.matricula > input, .semestre > input,
+.idprofessor > input{
+	width: 150px;
+	text-align: left;
+	padding: 5px 2px 2px 5px;
+}
+
+.data > input, .faltas > input, .titulo > input, 
+.nome > input, .cpf > input, .matricula > input,
+.semestre > input, .emissao > input, 
+.idprofessor > input, .turno{
+	margin-bottom: 10px;
+}
+
+.descricao > textarea{
+	width: 200px;
+	height: 100px;
+	border-radius: 5px;
+	border: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+
+button{
+	width: 150px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	border: 2px solid green;
+	font-weight: 900;
+	font-size: 16px;
+	color: green;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+button:hover,
+button:active{
+	background-color: #B4EEB4;
+	font-weight: 900;
+}

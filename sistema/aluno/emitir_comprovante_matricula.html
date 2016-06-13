@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página do portal do aluno para alterar dados pessoais no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Gestão Acadêmica - ACAD</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="../../img/ifpe_logomarca.png" alt="logo IFPE">
+        </div><!-- logo do sistema -->
+        
+        <div class="container">
+            <div class="conteudo">
+                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
+                <h2>
+                    <a href="menu_aluno.html">Aluno</a> :: Emitir comprovante de matrícula
+                </h2>
+
+                    <div class="cadastro">
+                        <form action="form-to-cadastro.php" method="post">
+                            <div class="aluno">
+                                <label for="aluno" class="alun">Aluno:</label>
+                                 <select>
+                                    <option value="0">Selecione um aluno</option>
+                                    <option value="Barbaha">Barbaha</option>
+                                    <option value="Thayane">Thayane</option>
+                                    <option value="Rennan">Rennan</option>
+                                    <option value="Vicente">Vicente</option>
+                                </select> 
+                            </div>
+
+                            <div class="semestre">
+                                <label for="semestre" class="semes">Semestre:</label>
+                                <input type="text" id="semestre" maxlength="8">
+                            </div>
+
+                            <div class="emissao">
+                                <label for="emissao" class="emiss">Tipo de emissão:</label><br>
+                                <label for="emissao1">Gerar PDF</label>
+                                <input type="radio" id="emissao1" value="emissao1"><br>
+                                <label for="emissao2">Enviar por e-mail</label>
+                                <input type="radio" id="emissao2" value="emissao2">
+                            </div>
+
+                            <button type="submit" name="Enviar" value="Enviar" id="botao">Emitir</button>
+                        </form>
+                    </div>
+
+                <a href="../index.html" class="menu-principal">Menu principal</a>
+            </div>
+        </div>
+
+    </body>
+</html>

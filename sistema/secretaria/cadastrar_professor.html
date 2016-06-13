@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página para a secretaria cadastrar professor no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Gestão Acadêmica - ACAD</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="../../img/ifpe_logomarca.png" alt="logo IFPE">
+        </div><!-- logo do sistema -->
+        
+        <div class="container">
+            <div class="conteudo">
+                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
+                <h2><a href="menu_secretaria.html">Secretaria</a> :: Cadastrar Professor</h2>
+
+                <div class="cadastro">
+                    <form action="form-to-cadastro.php" method="post">
+                        <div class="nome">
+                            <label for="nome" class="nom">Nome:</label>
+                            <input type="text" id="nome">
+                        </div>
+                        <div class="cpf">
+                            <label for="cpf" class="cepef">CPF:</label>
+                            <input type="text" id="cpf">
+                        </div>
+                        <div class="idprofessor">
+                            <label for="idprofessor" class="matr">Identidade:</label>
+                            <input type="text" id="idprofessor">
+                        </div>
+                        <button type="submit" name="Enviar" value="Enviar" id="botao">Enviar</button>
+                    </form>
+                </div>
+
+                <a href="../index.html" class="menu-principal">Menu principal</a>
+            </div>
+        </div>
+        
+    </body>
+</html>

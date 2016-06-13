@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página para o professor registrar notas no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado  pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Gestão Acadêmica - ACAD</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <div class="logo">
+            <img src="../../img/ifpe_logomarca.png" alt="logo IFPE">
+        </div><!-- logo do sistema -->
+
+        <div class="container">
+            <div class="conteudo">
+                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
+                <h2><a href="menu_professor.html">Professor</a> :: Registrar notas</h2>
+
+                    <div class="cadastro">
+                        <form action="form-to-cadastro.php" method="post">
+                            <div class="aluno">
+                                <label for="aluno">Aluno:</label>
+                                 <select>
+                                    <option value="0">Selecione um aluno</option>
+                                    <option value="Barbaha">Barbaha</option>
+                                    <option value="Thayane">Thayane</option>
+                                    <option value="Rennan">Rennan</option>
+                                    <option value="Vicente">Vicente</option>
+                                </select> 
+                            </div>
+
+                            <div class="disciplinas">
+                                <label for="disciplinas" class="disc">Disciplinas:</label><br>
+                                <input type="checkbox" id="poo" value="poo">
+                                <label for="poo">POO</label><br>
+                                <input type="checkbox" id="web1" value="web1">
+                                <label for="web1">Web 1</label><br>
+                                <input type="checkbox" id="prpr" value="prpr">
+                                <label for="prpr">PRPR</label><br>
+                                <input type="checkbox" id="bd" value="bd">
+                                <label for="bd">Banco de dados</label>
+                            </div>
+
+                            <div class="data">
+                                <label for="data" class="dat">Data:</label>
+                                <input type="date" id="data" maxlength="10">
+                            </div>
+
+                            <div class="faltas">
+                                <label for="faltas" class="falt">Número de faltas:</label>
+                                <input type="text" id="faltas" maxlength="2">
+                            </div>
+
+                            
+                            <button type="submit" name="Enviar" value="Enviar" id="botao">Registrar falta</button>
+                        </form>
+                    </div>
+
+                <a href="../index.html" class="menu-principal">Menu principal</a>
+            </div>
+        </div>
+        
+    </body>
+</html>
