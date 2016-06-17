@@ -82,7 +82,7 @@ li ul{
 	border: 2px solid green;
 	border-radius: 3px;
 	text-align: center;
-	top: 120px;
+	top: 105px;
 	position: absolute;
 	margin-left: 87px;
 	line-height: 35px;
@@ -211,7 +211,7 @@ section.oportunidades{
 }
 
 section.oportunidades > .container > h1{
-	padding-top: 160px;
+	padding-top: 140px;
 	font-size: 25px;
 	font-family: roboto;
 	color: #006400;
@@ -220,12 +220,10 @@ section.oportunidades > .container > h1{
 section.oportunidades > .container > .vaga{
 	width: 45%;
 	float: left;
-	margin-top: 50px;
 	text-align: center;
 	height: 400px;
 	background-color: #3CB371;
-	margin-left: 5%;
-	margin: 50px 2.5%;
+	margin: 30px 2.5%;
 	border-radius: 10px;
 }
 
@@ -249,8 +247,8 @@ section.oportunidades > .container > .vaga p{
 
 			/*    FOOTER    */
 section.footer{
-	background-color: #006400;
-	height: 150px;
+	background-color: #98FB98;
+	height: 130px;
 }
 
 section.footer > .container > .contato{
@@ -260,11 +258,51 @@ section.footer > .container > .contato{
 }
 
 section.footer > .container > .contato p{
-	color: #fff;
+	color: #2E8B57;
 }
 
+section.footer > .container hr{
+	width: 90%;
+	margin: 20px 5%;
+	float: right;
+	border: solid 1px #2E8B57;
+}
 
+/****** CSS DA PÁGINA QUEM SOMOS E CURSOS *******/
+/* uni essas duas seções porque elas usariam códigos parecidos,
+então para evitar repetição de código resolvi unir as duas e
+percebam que são usadas as mesmas classes tanto pra ipi quanto 
+pra qualidade também pra facilitar e diminuir a quantidade de 
+código */
+section.quemSomos, 
+section.curso{
+	background-color: #F0F8FF;
+	padding-top: 170px;
+	padding-bottom: 70px;
+}
 
+section.quemSomos > .container > h1{
+	font-weight: 900;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+section.quemSomos > .container > p,
+section.curso > .container > p{
+	text-align: left;
+	font-weight: 400;
+}
+
+section.curso > .container > h1{
+	font-weight: 900;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+section.curso > .container > h2{
+	font-weight: 400;
+	margin-bottom: 20px;
+}
 
 /********** CSS DO SISTEMA **********/
 
