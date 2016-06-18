@@ -9,18 +9,47 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <div class="logo">
-        	<img src="../img/ifpe_logomarca.png" alt="logo IFPE">
-        </div><!-- logo do sistema -->
-        <div class="container">
-        	<div class="conteudo">
-		        <h1>Sistema de Gestão Acadêmica -ACAD</h1>
-		        <a href="professor/menu_professor.html">Menu do Professor</a> <br>
-		        <a href="aluno/menu_aluno.html">Menu do aluno</a> <br>
-		        <a href="secretaria/menu_secretaria.html">Menu da secretaria</a> <br>
-		        <a href="help.html">Ajuda</a>
-        	</div>
-        </div>
+        <section class="sistem-content">
+            <section class="topofix">
+                <div class="container">
+                    <img src="../img/logo-sistema.jpg" alt="logo do Sistema IFJG">
+                    <a href="../index.html" class="btn">Sair</a> <!-- Esta tag será o botão para voltar a página do site, caso queira. -->
+                </div>
+            </section>
+            
+            <section class="users">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="professor/menu_professor.html" class="opcao-user aluno">
+                                <img src="../img/icon-aluno.png" alt="Icon Aluno">
+                                <p class="txt-user">Aluno</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aluno/menu_aluno.html" class="opcao-user prof">
+                                <img src="../img/icon-professor.png" alt="Icon Professor">
+                                <p class="txt-user">Professor</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="secretaria/menu_secretaria.html" class="opcao-user secretaria">
+                                <img src="../img/icon-secretaria.png" alt="Icon Secretaria">
+                                <p class="txt-user">Secretaria</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="help.html" class="opcao-user help">
+                                <img src="../img/icon-help.png" alt="Icon Ajuda">
+                                <p class="txt-user">Ajuda</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            </div>
+        </section>
+
 
     </body>
 </html>
