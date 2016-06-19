@@ -19,11 +19,11 @@
         <div class="container">
             <section class="login">
                 <div class="perfil secret">
-                    <h1>Secretaria</h1>
+                    <h1>Realizar matricula</h1>
                 </div>
                 <form class="formzinho" name="formzinho">
                     <label for="aluno" class=" strong alun">Aluno:</label>
-                    <select>
+                    <select required="">
                         <option value="0">Selecione um aluno</option>
                         <option value="Barbaha">Barbaha</option>
                         <option value="Thayane">Thayane</option>
@@ -32,7 +32,7 @@
                     </select> <br>
 
                     <label for="curso" class=" strong curs">Curso:</label>
-                    <select>
+                    <select required="">
                         <option value="0">Selecione um curso</option>
                         <option value="IPI">Informática para Internet</option>
                         <option value="qualidade">Qualidade</option>
@@ -42,15 +42,15 @@
 
                     <label for="turno" class=" strong turn">Turno:</label>
                     <label for="tarde">Tarde</label>
-                    <input type="radio" id="tarde" value="tarde">
+                    <input type="radio" id="tarde" value="tarde" required="">
                     <label for="noite">Noite</label>
-                    <input type="radio" id="noite" value="noite"> <br>
+                    <input type="radio" id="noite" value="noite" required=""> <br>
 
                     <label for="semestre" class=" strong semes">Semestre:</label>
-                    <input type="text" id="semestre" maxlength="8"> <br>
+                    <input type="text" id="semestre" maxlength="8" required=""> <br>
 
                     <label for="disciplinas" class=" strong disc">Disciplinas:</label><br>
-                    <input type="checkbox" id="poo" value="poo">
+                    <input type="checkbox" id="poo" value="poo" >
                     <label for="poo">POO</label>
                     <input type="checkbox" id="web1" value="web1">
                     <label for="web1">Web 1</label>
