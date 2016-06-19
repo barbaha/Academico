@@ -372,10 +372,7 @@ section.topofix > .container > a.btn{
 	text-align: center;
 	background-color: #fff;
 	color: #006400;
-}
-
-section.topofix > .container > a.sair{
-	width: 10%;
+	width: 11%;
 }
 
 section.topofix > .container > a.btn:hover{
