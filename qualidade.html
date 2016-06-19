@@ -7,41 +7,72 @@
 	<title>IFPE-JG</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/w3Data.js"></script><!-- nunca, em hipotese alguma remova esse código. Obrigado. --> <!-- O w3Data é a biblioteca do w3 que é nada mais que um arquivo js com funções prontas para uso, no nosso caso, usamos a função include html para chamar o menu -->
 </head>
 <body>
 	<section class="content">
-		<div w3-include-html="menuSite.html"></div> <!--esta div é para chamar o menu usando o include html do w3 que chama o arquivo menuSite.html e o inclui dentro dessa div -->
-		<section class="curso">
-			<div class="container">
-				<h1>Qualidade</h1>
-				<h2>Perfil Profissional</h2>
-				<p>
-					O Técnico em Qualidade é o profissional de nível médio que atende às necessidades de empresas públicas, privadas ou do terceiro setor no que se refere aos processos inerentes às atividades de aquisição, armazenagem, transporte e distribuição de mercadorias das organizações, auxiliando na tomada de decisões e na proposição de soluções que visem à otimização de processos e ferramentas da gestão organizacional. <br>
-
-					O Técnico em Qualidade colabora na elaboração de manuais, procedimentos, diagnósticos e relatórios dos processos de qualidade das empresas. Registra o controle da qualidade, em formulários específicos e de acordo com as normas e padrões preestabelecidos. Registra o controle da qualidade, em formulários específicos e de acordo com as normas e padrões preestabelecidos. Atua na elaboração e execução da auditoria interna da qualidade e acompanha a auditoria externa. Divulga os procedimentos de qualidade e propõe ações de informação e formação específica. Identifica inconformidades em produtos e processos, suas possíveis causas e ações corretivas e preventivas. <br>
-
-					A proposta deste curso é formar o Técnico em Qualidade capaz de dar apoio nos processos de planejamento, organização, coordenação, execução e controle das atividades inerentes ao setor de qualidade das organizações. Além disso, ao final de sua formação, este profissional, estará apto a atuar no apoio aos processos ligados às áreas de meio ambiente, responsabilidade social, segurança e saúde ocupacional, assegurando a integração dos setores e certificações futuras para as empresas, dentre elas as certificações preconizadas pela Internacional Organization for Standardization– ISO.
-
-				</p>
+		<section class="fixed">
+			<div class="container"> <!-- o container é para alinhar os elementos do menu no centro da página independente do tamanho dela -->
+				<nav class="menu">
+					<picture>
+						<a href="index.html">
+							<img src="img/ifpe_logomarca.png" alt="Logo IFPE">
+						</a>
+					</picture>
+					<div class="navegacao">
+						<ul>
+							<li>
+								<a href="quemSomos.html">Quem somos</a>
+							</li>
+							<li>
+								<a href="cursos.html">Cursos</a>
+								<ul class="drop-cursos">
+									<li class="ipi">
+										<a href="informatica-para-internet.html">Informática para Internet</a>
+									</li>
+									<li>
+										<a href="qualidade.html">Qualidade</a>
+									</li>
+								</ul> <!-- este ul dentro do li é onde fazemos o dropdown do menu, para criar isso fiz uma lista dentro do li cursos que é onde tem o dropdown que chama a págida de cada curso do campos -->
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+							<li>
+								<a href="sistema/index.html">Entrar</a>
+							</li>
+						</ul>
+						<div class="busca">
+							<input type="text">
+						</div>
+					</div>
+				</nav>
 			</div>
-		</section>
+			<section class="curso">
+				<div class="container">
+					<h1>Qualidade</h1>
+					<h2>Perfil Profissional</h2>
+					<p>
+						O Técnico em Qualidade é o profissional de nível médio que atende às necessidades de empresas públicas, privadas ou do terceiro setor no que se refere aos processos inerentes às atividades de aquisição, armazenagem, transporte e distribuição de mercadorias das organizações, auxiliando na tomada de decisões e na proposição de soluções que visem à otimização de processos e ferramentas da gestão organizacional. <br>
 
-		<section class="footer">
-			<div class="container">
-				<div class="contato">
-					<p>Email:</p>
-					<p>campus@ifpe.jaboatao.edu.br</p>
+						O Técnico em Qualidade colabora na elaboração de manuais, procedimentos, diagnósticos e relatórios dos processos de qualidade das empresas. Registra o controle da qualidade, em formulários específicos e de acordo com as normas e padrões preestabelecidos. Registra o controle da qualidade, em formulários específicos e de acordo com as normas e padrões preestabelecidos. Atua na elaboração e execução da auditoria interna da qualidade e acompanha a auditoria externa. Divulga os procedimentos de qualidade e propõe ações de informação e formação específica. Identifica inconformidades em produtos e processos, suas possíveis causas e ações corretivas e preventivas. <br>
+
+						A proposta deste curso é formar o Técnico em Qualidade capaz de dar apoio nos processos de planejamento, organização, coordenação, execução e controle das atividades inerentes ao setor de qualidade das organizações. Além disso, ao final de sua formação, este profissional, estará apto a atuar no apoio aos processos ligados às áreas de meio ambiente, responsabilidade social, segurança e saúde ocupacional, assegurando a integração dos setores e certificações futuras para as empresas, dentre elas as certificações preconizadas pela Internacional Organization for Standardization– ISO.
+
+					</p>
 				</div>
-				<hr>
-			</div>
+			</section>
+
+			<section class="footer">
+				<div class="container">
+					<div class="contato">
+						<p>Email:</p>
+						<p>campus@ifpe.jaboatao.edu.br</p>
+					</div>
+					<hr>
+				</div>
+			</section>
+
 		</section>
-
-	</section>
-
-	<script>
-		w3IncludeHTML();
-	</script> <!-- este script é onde chamamos a função do w3Data, mais explicações sobre isso no link que Francisco colocou na atividade. -->
-	<script src="js/main.js"></script>
-</body>
-</html>
+		<script src="js/main.js"></script>
+	</body>
+	</html>

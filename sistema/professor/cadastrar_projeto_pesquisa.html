@@ -1,53 +1,48 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Página para o professor registrar notas no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sistema de Gestão Acadêmica - ACAD</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../../css/style.css">
-    </head>
-    <body>
-        <div class="logo">
-            <img src="../../img/ifpe_logomarca.png" alt="logo IFPE">
-        </div><!-- logo do sistema -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Página para o professor registrar notas no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de Gestão Acadêmica - ACAD</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <section class="sistem-content">
+        <section class="topofix">
+            <div class="container">
+                <img src="../../img/logo-sistema.jpg" alt="logo do Sistema IFJG">
+                <a href="../index.html" class="btn">Voltar ao menu</a> <!-- Esta tag será o botão para voltar a página do site, caso queira. -->
+            </div>
+        </section>
 
         <div class="container">
-            <div class="conteudo">
-                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
-                <h2><a href="menu_professor.html">Professor</a> :: Cadastrar Projeto de Pesquisa</h2>
+            <section class="login">
+                <div class="perfil professor">
+                    <h1>Professor</h1>
+                </div>
+                <form name="formzinho" class="formzinho">
+                <label for="professor" class="strong prof">Professor:</label>
+                    <select>
+                        <option value="">Selecione um professor</option>
+                        <option value="Francisco">Francisco</option>
+                        <option value="Havana">Havana</option>
+                        <option value="Diego">Diego</option>
+                        <option value="Roberto">Roberto</option>
+                    </select><br>
 
-                    <div class="cadastro">
-                        <form action="form-to-cadastro.php" method="post">
-                            <div class="professor">
-                                <label for="professor" class="prof">Professor:</label>
-                                 <select>
-                                    <option value="0">Selecione um professor</option>
-                                    <option value="Francisco">Francisco</option>
-                                    <option value="Havana">Havana</option>
-                                    <option value="Diego">Diego</option>
-                                    <option value="Roberto">Roberto</option>
-                                </select> 
-                            </div>
+                    <label for="titulo" class="titl strong">Titulo do projeto:</label>
+                    <input type="text" id="titulo" maxlength="50"> <br>
 
-                            <div class="titulo">
-                                <label for="titulo" class="titl">Titulo do projeto:</label>
-                                <input type="text" id="titulo" maxlength="50">
-                            </div>
+                    <label for="descricao" class="descr strong">Descrição:</label><br>
+                    <textarea name="descricao" id="descricao" cols="20" rows="5"></textarea> <br>
 
-                            <div class="descricao">
-                                <label for="descricao" class="descr">Descrição:</label><br>
-                                <textarea name="descricao" id="descricao" cols="20" rows="5"></textarea>
-                            </div>
-
-                            <button type="submit" name="Enviar" value="Enviar" id="botao">Salvar</button>
-                        </form>
-                    </div>
-
-                <a href="../index.html" class="menu-principal">Menu principal</a>
-            </div>
+                    <button type="submit" name="Enviar" value="Enviar" id="botao">Salvar</button>
+                </form>
+            </section>
         </div>
-        
-    </body>
+    </section>
+    <script src="../../js/validacao.js"></script>
+</body>
 </html>

@@ -1,43 +1,41 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Página para a secretaria emitir histórico no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sistema de Gestão Acadêmica - ACAD</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="../../css/style.css">
-    </head>
-    <body>
-        <div class="logo">
-            <img src="../../img/ifpe_logomarca.png" alt="logo IFPE">
-        </div><!-- logo do sistema -->
-        
-        <div class="container">
-            <div class="conteudo">
-                <h1>Sistema de Gestão Acadêmica -ACAD</h1>
-                <h2><a href="menu_secretaria.html">Secretaria</a> :: Emitir histórico</h2>
-
-                    <div class="cadastro">
-                        <form action="form-to-cadastro.php" method="post">
-                            <div class="aluno">
-                                <label for="aluno">Aluno:</label>
-                                 <select>
-                                    <option value="0">Selecione um aluno</option>
-                                    <option value="Barbaha">Barbaha</option>
-                                    <option value="Thayane">Thayane</option>
-                                    <option value="Rennan">Rennan</option>
-                                    <option value="Vicente">Vicente</option>
-                                </select> 
-                            </div>
-
-                            <button type="submit" name="Enviar" value="Enviar" id="botao">Emitir</button>
-                        </form>
-                    </div>
-
-                <a href="../index.html" class="menu-principal">Menu principal</a>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Página para a secretaria emitir histórico no Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de Gestão Acadêmica - ACAD</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <section class="sistem-content">
+        <section class="topofix">
+            <div class="container">
+                <img src="../../img/logo-sistema.jpg" alt="logo do Sistema IFJG">
+                <a href="../index.html" class="btn">Voltar ao menu</a> <!-- Esta tag será o botão para voltar a página do site, caso queira. -->
             </div>
+        </section>
+        <div class="container">
+            <section class="login">
+                <div class="perfil secret">
+                    <h1>Secretaria</h1>
+                </div>
+                <form class="formzinho" name="formzinho">
+                    <label for="aluno" class="strong">Aluno:</label>
+                    <select>
+                        <option value="0">Selecione um aluno</option>
+                        <option value="Barbaha">Barbaha</option>
+                        <option value="Thayane">Thayane</option>
+                        <option value="Rennan">Rennan</option>
+                        <option value="Vicente">Vicente</option>
+                    </select> <br>
+
+                    <button type="submit" name="Enviar" value="Enviar" id="botao">Emitir</button>
+                </form>
+            </section>
         </div>
-        
-    </body>
+    </section>
+    <script src="../../js/validacao.js"></script>
+</body>
 </html>

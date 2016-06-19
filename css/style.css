@@ -65,7 +65,8 @@ section.fixed{
 	height: 125px;
 	background-color: #fff; 
 	top: 0;
-	position: fixed;
+/* 	position: fixed; */
+	position: inherit;
 	z-index: 999;
 }
 
@@ -343,9 +344,11 @@ nada que tiver a partir daqui influenciará no css
 do site e nem nada que for do css do site influenciará
 aqui. Ok? ok. */
 
-/*********** CSS PÁGINA INICIAL DO SISTEMA **********/
+/* CSS DO TOPO DAS PÁGINAS DO SISTEMA */
+
 section.sistem-content{
 	height: 100vh;
+	background-color: #FCFEF5;
 }
 
 section.topofix{
@@ -366,15 +369,20 @@ section.topofix > .container > a.btn{
 	padding: 10px;
 	border: solid 2px #3CB371;
 	border-radius: 5px;
-	width: 10%;
 	text-align: center;
 	background-color: #fff;
 	color: #006400;
 }
 
+section.topofix > .container > a.sair{
+	width: 10%;
+}
+
 section.topofix > .container > a.btn:hover{
 	background-color: #F0FFF0;
 }
+
+/*********** CSS PÁGINA INICIAL DO SISTEMA **********/
 
 section.users{
 	height: 100vh;
@@ -423,177 +431,242 @@ section.users > .container > ul > li > a.prof{
 }
 
 section.users > .container > ul > li > a.secretaria{
-	background-color: #11F4B4;
+	background-color: #88C425;
 }
 
 section.users > .container > ul > li > a.help{
 	background-color: #F92961;
 }
 
-/* .logo{
-	margin: 30px 40%;
+/************ CSS PÁGINA DE AJUDA ************/
+.container > section.ajuda{
+	margin:50px 0 0 10%;
+	width: 80%;
+	background-color: #eee;
 }
 
-.logo > img{
-	width: 250px;
-	height: 100px;
-}
-
-.container > .conteudo{
+.container > section.ajuda > .perfil{
+	height: 50px;
 	width: 100%;
-	height: 470px;
-	background-color: #B4EEB4;
-	border-radius: 10px;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+
+.container > section.ajuda > .perfil > h1{
+	font-weight: 900;
+	font-size: 20px;
 	text-align: center;
-	padding-top: 50px;
+	color: #fff;
 }
 
-.container > .conteudo > h1{
+.container > section.ajuda > .help{
+	background-color: #F92961;
+}			
+
+.container > section.ajuda > ul > li > p{
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+}
+
+.container > section.ajuda > ul > li{
+	border-bottom: solid 2px #bbb;
+}
+
+.container > section.ajuda > ul > li > ul{
+	display: block;
+	text-decoration: block;
+	border: 0 solid transparent;
+	border-radius: 0;
+	text-align: center;
+	top: 105px;
+	position: inherit;
+	margin-left: 0;
+	line-height: 35px;
+	padding: 0;
+	background-color: transparent;
 	margin-bottom: 20px;
 }
 
-.container > .conteudo > h2{
-	margin-bottom: 20px;
+.container > section.ajuda > ul > li > ul > li{
+	text-align: center;
 }
 
-.container > .conteudo > h3{
-	margin-bottom: 20px;
+/*********** CSS PÁGINA LOGIN *************/
+
+section.login{
+	width: 80%;
+	margin-left: 10%;
+	height: 400px;
+	background-color: #eee;
+	border-radius: 8px;
+	margin-top: 10%;
+	border: solid 2px transparent;
+
 }
 
-h2 > a{
-	color: green;
+section.login > .perfil{
+	width: 100%;
+	height: 50px;
 }
 
-a{
+section.login > .aluno{
+	background-color: #713D74;
+}
+
+section.login > .professor{
+	background-color: #44ADDD;
+} 
+
+section.login > .secret{
+	background-color: #88C425;
+}
+
+section.login > .perfil > h1{
+	font-size: 25px;
+	font-weight: 900;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+}
+
+section.login > form.login-aluno{
+	width: 50%;
+	height: 80%;
+	margin-top: 10%;
+	margin-left: 25%;
+	font-size: 18px;
+}
+
+section.login > form.login-aluno > label{
+	margin: 0 10px 50px 10px;
+}
+
+section.login > form.login-aluno > input{
+	width: 300px;
+	height: 35px;
+	margin-bottom: 30px;
+	border: solid 2px #ccc;
+	border-radius: 5px;
+}
+
+section.login > form.login-aluno > a{
+	width: 150px;
+	height: 0px;
+	margin: 50px 40%;
+	padding: 6px 20px;
+	border: solid 2px transparent;
+	border-radius: 5px;
+	background-color: #AEA9D1;
 	color: #000;
 }
 
-a:hover{
-	color: green;
+section.login > form.login-aluno > a:hover{
+	background-color: #D2BFE3;
 }
 
-a:active{
-	color: #aaa;
+/********** CSS DO MENU *************/
+
+section.conteudo{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 15%;
 }
 
-.menu-principal{
-	float: right;
-	margin-top: 2%;
-	margin-right: 5%;
-	color: green;
+section.conteudo li{
+	display: inline-table;
 }
 
-.container > .conteudo > .cadastro{
-}
-
-select{
-	width: 170px;
-	height: 30px;
-	border-radius: 5px;
+section.conteudo a{
+	width: 215px;
+	height: 50px;
 	text-align: center;
-	border: 2px;
+	display: inline-table;
+	border: solid 2px transparent;
+	padding: 30px 20px 10px 20px;
+	margin: 10% 30px;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 900;
+}
+
+section.conteudo a.aluno{
+	background-color: #713D74;
+}
+
+section.conteudo a.aluno:hover{
+	background-color: #4F364C;
+}
+
+section.conteudo a.secret{
+	background-color: #88C425;
+}
+
+section.conteudo a.secret:hover{
+	background-color: #7ADE4D;
+}
+
+section.conteudo a.professor{
+	background-color: #44ADDD;
+}
+
+section.conteudo a.professor:hover{
+	background-color: #3FB8AF;
+}
+
+/* CSS DOS FORMULÁRIOS, VULGO, OUTRAS PÁGINAS ALÉM DO MENU */
+
+section.login > form.formzinho{
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+section.login > form.formzinho > label{
+	margin: 0 10px 50px 10px;
+}
+
+section.login > form.formzinho > input{
+	width: 300px;
+	height: 35px;
+	margin-bottom: 30px;
+	border: solid 2px #ccc;
+	border-radius: 5px;
+}
+
+section.login > form.formzinho > a{
+	width: 150px;
+	height: 0px;
+	margin: 50px 40%;
+	padding: 6px 20px;
+	border: solid 2px transparent;
+	border-radius: 5px;
+	background-color: #AEA9D1;
+	color: #000;
+}
+
+section.login > form.formzinho > a:hover{
+	background-color: #D2BFE3;
+}
+
+section.login > form.formzinho > label.strong{
+	font-weight: 900;
+}
+
+section.login > form.formzinho > select{
+	width: 150px;
+	height: 30px;
 	margin-bottom: 20px;
 }
 
-.disc, .unid, .nota, .dat, .falt, 
-.prof, .titl, .descr, .nom, .cepef,
-.matr, .alun, .semes, .emiss, .curs, 
-.turn{
-	font-weight: 900;
-	margin-bottom: 15px;
+section.login > form.formzinho > input[type=checkbox]{
+	width: 18px;
+    height: 15px;
 }
 
-.disciplinas{
-	margin-left: 41%;
-	width: 200px;
-	height: 110px;
-	text-align: center;
+section.login > form.formzinho > input[type=radio]{
+	width: 18px;
+    height: 15px;
 }
-
-.unidade{
-	height: 70px;
-}
-
-input[type=radio],
-input[type=checkbox] {
-   padding-left:5px;
-   padding-right:5px;
-   border-radius:15px;
-   -webkit-appearance:button;
-   border: double 2px #ccc;
-   background-color:#fff;
-   color:#FFF;
-   white-space: nowrap;
-   overflow:hidden;
-   outline: none !important;
-   width:15px;
-   height:15px;
-   cursor: pointer;
-}
- 
-input[type=radio]:checked,
-input[type=checkbox]:checked {
-   background-color:green;
-}
- 
-input[type=radio]:hover,
-input[type=checkbox]:checked {
-   box-shadow:0px 0px 10px green;
-}
-
-.nota > input, .data > input, .faltas > input,
-.titulo > input, .nome > input, .cpf > input,
-.matricula > input, .semestre > input, 
-.idprofessor > input{
-	width: 100px;
-	height: 30px;
-	border-radius: 5px;
-	text-align: center;
-	border: 2px;
-}
-
-.nome > input, .cpf > input,
-.matricula > input, .semestre > input,
-.idprofessor > input{
-	width: 150px;
-	text-align: left;
-	padding: 5px 2px 2px 5px;
-}
-
-.data > input, .faltas > input, .titulo > input, 
-.nome > input, .cpf > input, .matricula > input,
-.semestre > input, .emissao > input, 
-.idprofessor > input, .turno{
-	margin-bottom: 10px;
-}
-
-.descricao > textarea{
-	width: 200px;
-	height: 100px;
-	border-radius: 5px;
-	border: 2px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 10px;
-}
-
-
-button{
-	width: 150px;
-	height: 30px;
-	border-radius: 5px;
-	text-align: center;
-	border: 2px solid green;
-	font-weight: 900;
-	font-size: 16px;
-	color: green;
-	background-color: #fff;
-	cursor: pointer;
-}
-
-button:hover,
-button:active{
-	background-color: #B4EEB4;
-	font-weight: 900;
-}
- */
