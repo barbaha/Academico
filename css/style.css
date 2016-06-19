@@ -65,8 +65,7 @@ section.fixed{
 	height: 125px;
 	background-color: #fff; 
 	top: 0;
-/* 	position: fixed; */
-	position: inherit;
+ 	position: fixed;
 	z-index: 999;
 }
 
@@ -119,6 +118,7 @@ li ul{
 	line-height: 35px;
 	padding: 5px;
 	background-color: #fff;
+	z-index: 9999;
 }
 
 li:hover ul, li.over ul{
