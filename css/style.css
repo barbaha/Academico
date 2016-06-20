@@ -527,7 +527,7 @@ section.login > .perfil > h1{
 	color: #fff;
 }
 
-section.login > form.login-aluno{
+section.login > form.login-perfil{
 	width: 50%;
 	height: 80%;
 	margin-top: 10%;
@@ -535,11 +535,11 @@ section.login > form.login-aluno{
 	font-size: 18px;
 }
 
-section.login > form.login-aluno > label{
+section.login > form.login-perfil > label{
 	margin: 0 10px 50px 10px;
 }
 
-section.login > form.login-aluno > input{
+section.login > form.login-perfil > input{
 	width: 300px;
 	height: 35px;
 	margin-bottom: 30px;
@@ -547,18 +547,20 @@ section.login > form.login-aluno > input{
 	border-radius: 5px;
 }
 
-section.login > form.login-aluno > a{
+section.login > form.login-perfil > button{
 	width: 150px;
-	height: 0px;
-	margin: 50px 40%;
-	padding: 6px 20px;
-	border: solid 2px transparent;
-	border-radius: 5px;
-	background-color: #AEA9D1;
-	color: #000;
+    height: 40px;
+    margin: 50px 40%;
+    padding: 6px 20px;
+    border: solid 2px #bbb;
+    border-radius: 5px;
+    background-color: #AEA9D1;
+    color: #000;
+    font-weight: 900;
+    cursor: pointer;
 }
 
-section.login > form.login-aluno > a:hover{
+section.login > form.login-perfil > button:hover{
 	background-color: #D2BFE3;
 }
 
