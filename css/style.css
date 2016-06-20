@@ -3,37 +3,6 @@
 	padding: 0;
 }
 
-/*COISAS NOVAS QUE PODEM GERAR DÚVIDAS:
-1. a > nos códigos nada mais que é mostrando o
-caminho especifico que vamos determinar os valores 
-seguintes, garantindo que apenas o elemento "setado"
-receba tal valor.
-
-2. Podemos determinar valores com px(pixel), 
-%(porcentagem) e também vh(ViewPort height) ou 
-vw(ViewPort width) elas simplesmente captam o tamanho
-da tela através da tag meta viweport que esta inserida
-no nosso html (<meta name="viewport" content="width=device-width, initial-scale=1">)
-e deixam o elemento com a altura ou largura total da 
-janela em que foi aberta. Dessas duas ultimas citadas apenas
-a vh foi utilizada. (existem várias outras formas de 
-determinar valores, mas essas são as principais e também
-utilizadas aqui, exceto a vw).
-
-3. A class container é utilizada para organizar
-e manter todo o código centralizado na página!
-
-4. Quando há um elemento dentro de uma classe container
-e é determinado um width 100% para esse elemento ele irá 
-ser 100% do tamanho do .container e não da tela inteira
-pois o .container é o elemento pai referente ao elemento 
-modificado. Isso não funciona apenas para a classe .container
-mas também para QUALQUER ELEMENTO que estiver dentro 
-de outro elemento.
-
-5.
-*/
-
 body{
 	background-color: #fff;
 	width: 100%;
@@ -57,9 +26,6 @@ li{
 	list-style:none;
 }
 
-/*********** CSS DO SITE *************/
-
-			/*   MENU   */
 section.fixed{
 	width: 100%;
 	height: 125px;
@@ -142,7 +108,6 @@ nav.menu > .navegacao > .busca > input:focus{
 	border: solid 2px green;
 }
 
-			/*   BANNER   */
 .banner {
 	width: 100%;
 	height: 100vh;
@@ -193,7 +158,6 @@ nav.menu > .navegacao > .busca > input:focus{
 	background: #32CD32;
 }
 
-			/*  NOTICIAS  */
 section.noticias{
 	width: 100%;
 	height: 100vh;
@@ -233,7 +197,6 @@ section.noticias > .container > .publicacao p{
 	text-align: left;
 }
 
-			/* OPORTUNIDADES */
 section.oportunidades{
 	width: 100%;
 	height: 100vh;
@@ -275,7 +238,6 @@ section.oportunidades > .container > .vaga p{
 	color: #fff;
 }
 
-			/*    FOOTER    */
 section.footer{
 	background-color: #98FB98;
 	height: 130px;
@@ -298,12 +260,6 @@ section.footer > .container hr{
 	border: solid 1px #2E8B57;
 }
 
-/****** CSS DA PÁGINA QUEM SOMOS E CURSOS *******/
-/* uni essas duas seções porque elas usariam códigos parecidos,
-então para evitar repetição de código resolvi unir as duas e
-percebam que são usadas as mesmas classes tanto pra ipi quanto 
-pra qualidade também pra facilitar e diminuir a quantidade de 
-código */
 section.quemSomos, 
 section.curso{
 	background-color: #F0F8FF;
@@ -333,18 +289,6 @@ section.curso > .container > h2{
 	font-weight: 400;
 	margin-bottom: 20px;
 }
-
-
-
-
-
-/********** CSS DO SISTEMA **********/
-/* aqui se inicia o css APENAS do Sistema,
-nada que tiver a partir daqui influenciará no css
-do site e nem nada que for do css do site influenciará
-aqui. Ok? ok. */
-
-/* CSS DO TOPO DAS PÁGINAS DO SISTEMA */
 
 section.sistem-content{
 	height: 100vh;
@@ -378,8 +322,6 @@ section.topofix > .container > a.btn{
 section.topofix > .container > a.btn:hover{
 	background-color: #F0FFF0;
 }
-
-/*********** CSS PÁGINA INICIAL DO SISTEMA **********/
 
 section.users{
 	height: 100vh;
@@ -416,7 +358,6 @@ section.users > .container > ul > li > a.opcao-user p{
 	font-weight: 900;
 	color: #fff;
 	font-size: 20px;
-
 }
 
 section.users > .container > ul > li > a.aluno{
@@ -435,7 +376,6 @@ section.users > .container > ul > li > a.help{
 	background-color: #F92961;
 }
 
-/************ CSS PÁGINA DE AJUDA ************/
 .container > section.ajuda{
 	margin:50px 0 0 10%;
 	width: 80%;
@@ -488,8 +428,6 @@ section.users > .container > ul > li > a.help{
 .container > section.ajuda > ul > li > ul > li{
 	text-align: center;
 }
-
-/*********** CSS PÁGINA LOGIN *************/
 
 section.login{
 	width: 80%;
@@ -564,8 +502,6 @@ section.login > form.login-perfil > button:hover{
 	background-color: #D2BFE3;
 }
 
-/********** CSS DO MENU *************/
-
 section.conteudo{
 	width: 80%;
 	margin-left: 10%;
@@ -613,8 +549,6 @@ section.conteudo a.professor{
 section.conteudo a.professor:hover{
 	background-color: #3FB8AF;
 }
-
-/* CSS DOS FORMULÁRIOS, VULGO, OUTRAS PÁGINAS ALÉM DO MENU */
 
 section.login > form.formzinho{
 	width: 80%;

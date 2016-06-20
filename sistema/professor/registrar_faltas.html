@@ -1,62 +1,59 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="Página do Menu do professor do Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado  pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sistema de Gestão Acadêmica - ACAD</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../../css/style.css">
-</head>
-<body>
-    <section class="sistem-content">
-        <section class="topofix">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página do Menu do professor do Sistema de Gestão Acadêmica - ACAD feito para praticar a criação de páginas para um sistema acadêmico da cadeira Projeto e Prática 1, coordernado pelo professor Francisco Junior, codificado  pelo grupo: Barbaha Maria, Thayane Lopes, Rennan Maxi e Vicente Vinicius; Turma IPI2015.2T">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Gestão Acadêmica - ACAD</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+        <section class="sistem-content">
+            <section class="topofix">
+                <div class="container">
+                    <img src="../../img/logo-sistema.jpg" alt="logo do Sistema IFJG">
+                    <a href="menu_professor.html" class="btn">Voltar</a>
+                </div>
+            </section>
             <div class="container">
-                <img src="../../img/logo-sistema.jpg" alt="logo do Sistema IFJG">
-                <a href="menu_professor.html" class="btn">Voltar</a> <!-- Esta tag será o botão para voltar a página do site, caso queira. -->
+                <section class="login">
+                    <div class="perfil professor">
+                        <h1>Registrar faltas</h1>
+                    </div>
+                    <form name="formzinho" class="formzinho">
+                        <label for="aluno" class="aluno strong">Aluno:</label>
+                        <select>
+                            <option value="0">Selecione um aluno</option>
+                            <option value="Barbaha">Barbaha</option>
+                            <option value="Thayane">Thayane</option>
+                            <option value="Rennan">Rennan</option>
+                            <option value="Vicente">Vicente</option>
+                        </select> <br>
+
+                        <label for="disciplinas" class="disc strong">Disciplinas:</label><br>
+                        <input type="checkbox" id="poo" value="poo">
+                        <label for="poo">POO</label>
+                        <input type="checkbox" id="web1" value="web1">
+                        <label for="web1">Web 1</label>
+                        <input type="checkbox" id="prpr" value="prpr">
+                        <label for="prpr">PRPR</label>
+                        <input type="checkbox" id="bd" value="bd">
+                        <label for="bd">Banco de dados</label> <br>
+
+                        <label for="unidade" class="unid strong">Unidade:</label><br>
+                        <label for="unidade1">Unidade I</label>
+                        <input type="radio" id="unidade1" name="unidade" value="unidade1">
+                        <label for="unidade2">Unidade II</label>
+                        <input type="radio" id="unidade2" name="unidade" value="unidade2"> <br>
+
+                        <label for="nota" class="nota strong">Faltas:</label>
+                        <input type="text" id="nota" maxlength="4" required=""> <br>
+                        <button type="submit" name="Enviar" value="Enviar" id="botao">Registrar faltas</button>
+                    </form>
+                </section>
             </div>
         </section>
-        <div class="container">
-            <section class="login">
-                <div class="perfil professor">
-                    <h1>Registrar faltas</h1>
-                </div>
-                <form name="formzinho" class="formzinho">
-                    <label for="aluno" class="aluno strong">Aluno:</label>
-                    <select>
-                        <option value="0">Selecione um aluno</option>
-                        <option value="Barbaha">Barbaha</option>
-                        <option value="Thayane">Thayane</option>
-                        <option value="Rennan">Rennan</option>
-                        <option value="Vicente">Vicente</option>
-                    </select> <br>
-
-                    <label for="disciplinas" class="disc strong">Disciplinas:</label><br>
-                    <input type="checkbox" id="poo" value="poo">
-                    <label for="poo">POO</label>
-                    <input type="checkbox" id="web1" value="web1">
-                    <label for="web1">Web 1</label>
-                    <input type="checkbox" id="prpr" value="prpr">
-                    <label for="prpr">PRPR</label>
-                    <input type="checkbox" id="bd" value="bd">
-                    <label for="bd">Banco de dados</label> <br>
-
-                    <label for="unidade" class="unid strong">Unidade:</label><br>
-                    <label for="unidade1">Unidade I</label>
-                    <input type="radio" id="unidade1" name="unidade" value="unidade1">
-                    <label for="unidade2">Unidade II</label>
-                    <input type="radio" id="unidade2" name="unidade" value="unidade2"> <br>
-
-                    <label for="nota" class="nota strong">Faltas:</label>
-                    <input type="text" id="nota" maxlength="4" required=""> <br>
-
-
-                    <button type="submit" name="Enviar" value="Enviar" id="botao">Registrar faltas</button>
-                </form>
-            </section>
-        </div>
-
-    </section>
-    <script src="../../js/validacao.js"></script>
-</body>
+        <script src="../../js/validacao.js"></script>
+    </body>
 </html>
