@@ -154,3 +154,19 @@ function formataCampo(campo, Mascara, evento) {
             return true; 
     }
 }
+
+//____________________________________________________________________
+
+
+function bloqueia_alfa(){
+if (event.keyCode < 32 || event.keyCode >32){
+event.keyCode = 0;
+return false;
+}
+else{
+if (event.keyCode == 32){
+event.keyCode = 0;
+return false;
+}
+}
+}

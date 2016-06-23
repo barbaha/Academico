@@ -7,7 +7,23 @@
         <title>Sistema de Gestão Acadêmica - ACAD</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../../css/style.css">
+        
+        <script type="text/javascript">
+             
+                function verifica()
+         {
+            if ((event.keyCode==32)||(event.keyCode==32)){
+              //alert("Preencha o campo corretamente");
+                event.returnValue = false; 
+            }
+          
+            }
+        </script>
+           
+       
+    
     </head>
+    
     <body>
         <section class="sistem-content">
             <section class="topofix">
@@ -22,15 +38,18 @@
                         <h1>Aluno</h1>
                     </div>
                     <form action="menu_aluno.html" class="login-perfil">
-                        <label for="">Nome:</label>
-                        <input type="text" name="nomeAluno" required="">
+                        <label for="">Matricula:</label>
+                        <input type="text" name="nomeAluno" required="" onkeypress ="return verifica()"><br>
                         <label for="">Senha:</label>
-                        <input type="password" name="senhaAluno" required="">
-                        <button type="submit">Entrar</button>
+                        <input type="password" name="senhaAluno" required="" onkeypress ="return verifica()">
+                        <button type="submit" >Entrar</button>
                     </form>
+
                 </section>
+
             </div>
             
         </section>
+
     </body>
 </html>
